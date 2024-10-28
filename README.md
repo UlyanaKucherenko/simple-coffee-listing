@@ -1,3 +1,3 @@
 # Simple Coffee Listing
 
-DEMO: [https://github.com/facebook/create-react-app](https://github.com/facebook/create-react-app).
+DEMO: [https://s-coffee-app.netlify.app](https://s-coffee-app.netlify.app).

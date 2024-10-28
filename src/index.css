@@ -1,13 +1,52 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+:root {
+  /* SIZES */
+  --text-heading: 32px;
+  --text-body: 16px;
+  --text-label: 14px;
+  --text-price: 12px;
+  --text-sm: 10px;
+
+  --spacing-1: 10px;
+  --spacing-2: 20px;
+  --spacing-4: 40px;
+  --spacing-8: 80px;
+
+  /* COLORS */
+
+  --black-light: #1b1d1f;
+  --black: #111315;
+  --gray: #6f757c;
+  --green: #bee3cc;
+  --white: #fef7ee;
+  --yellow: #f6c768;
+  --red: #ed735d;
+
+  /* DEVICES */
+  --desktop: 1280px; /* 1280px */
+  --laptop: 1024px; /* 1024px */
+  --tablet: 768px; /* 998px */
+  --mobile: 520px; /* 640px */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--black);
+  color: var(--white);
+  font-size: var(--text-body);
+}
+
+ul,
+li {
+  padding: 0;
+  list-style: none;
 }

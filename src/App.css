@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+.app {
+  padding-bottom: 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bgImage {
+  height: 400px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.bgImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container {
+  max-width: var(--desktop);
+  width: 100%;
+  padding: var(--spacing-1);
+  margin: 0 auto;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    max-width: var(--laptop);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media (max-width: 998px) {
+  .container {
+    max-width: var(--tablet);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: var(--mobile);
+  }
+}
+
+.main {
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--black-light);
+  color: var(--white);
+  border-radius: var(--spacing-2);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  position: relative;
+  max-width: 500px;
+  padding: var(--spacing-8) var(--spacing-1) var(--spacing-2);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.titleDecor {
+  position: absolute;
+  top: var(--spacing-2);
+  right: 0;
+  z-index: -1;
+}
+
+.title {
+  margin-bottom: var(--spacing-2);
+  font-size: var(--text-heading);
+}
+
+.description {
+  color: var(--gray);
+}
+
+.content {
+  width: 100%;
+  max-width: 1040px;
+  padding: 0 var(--spacing-4) var(--spacing-8);
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-2);
+  margin-bottom: var(--spacing-4);
+}
+
+.filterBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: var(--white);
+  outline: none;
+  border: none;
+  padding: 8px var(--spacing-1);
+  border-radius: var(--spacing-1);
+  font-size: var(--text-label);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.filterBtn:hover,
+.filterBtn.active {
+  background-color: var(--gray);
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  row-gap: var(--spacing-8);
+  column-gap: var(--spacing-2);
+  width: 100%;
 }

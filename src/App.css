@@ -3,7 +3,7 @@
 }
 
 .bgImage {
-  height: 400px;
+  height: 300px;
 }
 
 .bgImage img {
@@ -39,7 +39,7 @@
 
 .main {
   position: absolute;
-  top: 220px;
+  top: 160px;
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--black-light);
